@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> CSS Layout Assignment!</title>
+    <!-- Import the Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" media="screen" />
+
+    <style>
+       /* Flexbox container for layout */
+       .box-container {
+        display: flex;
+        justify-content: space-evenly; /* Space between boxes */
+        flex-wrap: nowrap; /* Prevent wrapping to the next row */
+        gap: 20px; /* spacing between boxes */
+       }
+
+        /* Add consistent styling for all boxes */
+       .about-me {
+        width: 30%; /* Set the width for all boxes */
+        border: 1px solid #818181;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 10px;
+        box-sizing: border-box; /* Ensure padding doesn't affect width */
+       }
+      /* Can't get the fourth box to appear below the first one */
+      .about-me:nth-child(4) {
+        order: 4; 
+    }
+    </style>
+
+</head>
+
+<body>
+<h1>My CSS cards</h1>
+
+
+<div class="about-me">
+<h2>First Steps on CSS Territory</h2>   
+
+<p> Working with CSS is soooo exciting 🎉 🎉  </p> 
+</div>
+
+
+<div class="about-me" style="background-color: #000000; color: #ffffff; border: 1px solid #000000;">
+<h2>Next Level Excitement 🍒🍒</h2>
+<p>Conquering new territories every day. Just can't stop.</p>
+</div>
+
+
+<div class="about-me">
+<h2 style="background-color: rgb(240, 162, 219); color: black;">Exploring New Horizons 🌟</h2>
+<p>Card #3 down! Ajdeeee 🚀</p>
+</div>
+
+
+<div class="about-me">
+<h2 style="color: rgb(208, 74, 226);">More Things To Write ✏️✨</h2>
+<p>Now just have to figure out colors! 🎨 📖</p>
+</div>
+
+</body>
+
+
+
+<script src="main.js"></script>
+
+</html> 
