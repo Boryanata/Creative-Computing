@@ -1,17 +1,13 @@
-/* .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-} */
 
 
-/* main {
-  display: flex;
-  justify-content: flex-start;
-  align-items: left;
-} */
+.annotation {
+  position: fixed; /* Fix the position relative to the viewport */
+  bottom: 50px; /* Distance from the bottom of the page */
+  right: 50px; /* Distance from the right of the page */
+  font-size: 12px; /* Small font size */
+  color: #555; /* Subtle text color */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 5px 10px; /* Add some padding */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
