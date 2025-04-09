@@ -1,0 +1,56 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh; /* Full viewport height */
+  padding: 0 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-links img {
+  width: 350px; /* Set smaller size for images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.image-links img:hover {
+  transform: none; /* Disable hover effects */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: rgb(238, 237, 237);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.scroll-icon {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -30px;
+  margin: 0px auto 0; /* Top spacing, center horizontally */
+  width: 60px; /* Adjust size */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.scroll-icon img {
+  width: 100%;
+  height: auto;
+}
+
+.scroll-icon:hover {
+  transform: scale(1.5);
+}
