@@ -8,60 +8,76 @@
     <link rel="stylesheet" type="text/css" href="./styles/style.css" media="screen" />
 
     <style>
-        /* Flexbox container for layout */
-        .box-container {
+       
+        body {
             display: flex;
-            justify-content: flex-start; /* Space between boxes */
-            flex-wrap: wrap; /* Prevent wrapping to the next row */
-            gap: 40px; /* Spacing between boxes */
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
         }
 
-        /* Add consistent styling for all boxes */
+        .content {
+            width: 100%; 
+            max-width: 1200px; 
+            text-align: left; 
+        }
+
+        h1 {
+            margin-bottom: 20px; 
+        }
+
+      
+        .box-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+            gap: 40px; 
+        }
+
+    
         .about-me {
-            width: calc(30% - 20px); /* Set the width for all boxes */
-            aspect-ratio: 1 / 1; /* Makes it a perfect square */
+            width: 100%; 
+            aspect-ratio: 1 / 1; 
             border: 1px solid #818181;
             padding: 35px;
-            margin: 20px 0;
             border-radius: 10px;
-            box-sizing: border-box; /* Ensure padding doesn't affect width */
+            box-sizing: border-box; 
             text-align: left;
             display: flex;
             flex-direction: column;
             align-items: center;
-        
         }
 
-        
         .about-me:nth-child(4) {
-           order: 1; /* Move the fourth box below the first one */
-           width: calc(30% - 20px); /* Same width as the others */
+            grid-column: 1; /* Aligning 4th card with first column */
         }
     </style>
 </head>
 
 <body>
-    <h1>My CSS cards</h1>
+    <div class="content">
+        <h1>My CSS cards</h1>
+        <div class="box-container">
+            <div class="about-me">
+                <h2>First Steps on CSS Territory</h2>
+                <p>Working with CSS is soooo exciting 🎉 🎉 more text and more text and more and more and more and more etc etc text text text words words words</p>
+            </div>
 
-    <div class="box-container">
-        <div class="about-me">
-            <h2>First Steps on CSS Territory</h2>
-            <p>Working with CSS is soooo exciting 🎉 🎉 more text and more text and more and more and more and more etc etc text text text words words words</p>
-        </div>
+            <div class="about-me" style="background-color: #000000; color: #ffffff; border: 1px solid #000000;">
+                <h2>Next Level Excitement 🍒🍒</h2>
+                <p>Conquering new territories every day. Just can't stop.</p>
+            </div>
 
-        <div class="about-me" style="background-color: #000000; color: #ffffff; border: 1px solid #000000;">
-            <h2>Next Level Excitement 🍒🍒</h2>
-            <p>Conquering new territories every day. Just can't stop.</p>
-        </div>
+            <div class="about-me">
+                <h2 style="background-color: rgb(244, 210, 235); color: black;">Exploring New Horizons 🌟</h2>
+                <p>Card #3 down! Ajdeeee 🚀</p>
+            </div>
 
-        <div class="about-me">
-            <h2 style="background-color: rgb(244, 210, 235); color: black;">Exploring New Horizons 🌟</h2>
-            <p>Card #3 down! Ajdeeee 🚀</p>
-        </div>
-
-        <div class="about-me">
-            <h2 style="color: rgb(189, 123, 198);">More Things To Write ✏️✨</h2>
-            <p>Now just have to figure out colors! 🎨 📖</p>
+            <div class="about-me">
+                <h2 style="color: rgb(189, 123, 198);">More Things To Write ✏️✨</h2>
+                <p>Now just have to figure out colors! 🎨 📖</p>
+            </div>
         </div>
     </div>
 </body>
